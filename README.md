@@ -6,20 +6,20 @@ Este projeto contém avaliação do pacote **Hercules** __mainframe emulator__ c
 
 * Instalação
   * [Windows](#321-guia-de-instalação-windows)
-  * [Windows](#322-guia-de-instalação-windows)
-  * [Pacote de aplicações opicionais CBT DASD](#323-pacote-de-aplicações-opicionais-CBT-DASD)
+  * [Linux](#322-guia-de-instalação-linux)
+  * [Pacote de aplicações opcionais CBT DASD](#323-pacote-de-aplicações-opcionais-CBT-DASD)
 
 ---
 ## 2. Documentação
 
 ### 2.1. Use Case Diagram
 
-![UseCaseDiagram-Context.png](./doc/UseCaseDiagram-Context.png) 
+![UseCaseDiagram-Context.png](./doc/images/UseCaseDiagram-Context.png) 
 
 
 ### 2.2. Deploy Diagram
 
-![DeployDiagram-Context.png](./doc/DeployDiagram-Context.png) 
+![DeployDiagram-Context.png](./doc/images/DeployDiagram-Context.png) 
 
 
 ---
@@ -151,7 +151,7 @@ herc =====> exit
 ```
 
 
-### 3.2.3. Pacote de aplicações opicionais CBT DASD
+### 3.2.3. Pacote de aplicações opcionais CBT DASD
 
 * Faça download do pacote opcional **tk4-cbt.zip** na página do [TK4](http://wotho.ethz.ch/tk4-/) ou diretamente por este [link de dowload](http://wotho.ethz.ch/tk4-/tk4-cbt.zip). 
 
