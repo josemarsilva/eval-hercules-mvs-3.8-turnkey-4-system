@@ -8,6 +8,7 @@ Este projeto contém avaliação do pacote **Hercules** __mainframe emulator__ c
   * [Windows](#321-guia-de-instalação-windows)
   * [Linux](#322-guia-de-instalação-linux)
   * [Pacote de aplicações opcionais CBT DASD](#323-pacote-de-aplicações-opcionais-CBT-DASD)
+  * [Instalação Emulador Terminal ZOC TN3270](#324-instalação-emulador-terminal-zoc-tn3270)
 
 ---
 ## 2. Documentação
@@ -85,6 +86,7 @@ mvs.bat
 herc =====> exit
 ```
 
+---
 ### 3.2.2. Guia de Instalação Linux
 
 #### a. Leitura pre instalação
@@ -150,7 +152,7 @@ echo Executando mvs
 herc =====> exit
 ```
 
-
+---
 ### 3.2.3. Pacote de aplicações opcionais CBT DASD
 
 * Faça download do pacote opcional **tk4-cbt.zip** na página do [TK4](http://wotho.ethz.ch/tk4-/) ou diretamente por este [link de dowload](http://wotho.ethz.ch/tk4-/tk4-cbt.zip). 
@@ -178,8 +180,20 @@ mv /opt/tk4-_v1.00_current/conf/cbt_dasd.cnf /opt/tk4-_v1.00_current/conf/cbt_da
 cp /opt/tk4-cbt/conf/cbt_dasd.cnf /opt/tk4-_v1.00_current/conf
 ```
 
+
+---
+#### 3.2.4. Instalacao Emulador Terminal ZOC TN3270
+
+* Faça o download e instale o emulador de terminal https://www.emtec.com/zoc/
+
+
+---
 ### 3.3. Guia de Configuração
 
 * Em `/opt/tk4-cbt/conf/tk4-.cnf` encontra-se o principal arquivo de configuração do Hercules
 * Certifique-se que as portas TCP/IP **3270** e **8038** e **3505** estarão disponíveis para o Hercules quando ele subir
 
+---
+### 3.4. Guia de Demonstração
+
+* Credenciais do TSO: `herc01/CUL8TR`
