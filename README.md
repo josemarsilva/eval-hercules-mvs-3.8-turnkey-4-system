@@ -37,7 +37,7 @@ Este projeto contém avaliação do pacote **Hercules** __mainframe emulator__ c
 
 #### a. Leitura pre instalação
 * [Leia antes de iniciar - Página do TK4](http://wotho.ethz.ch/tk4-/)
-* [Assista ao vídeo antes de iniciar - Vídeo instalação TK4](http://wotho.ethz.ch/tk4-/)
+* [Assista ao vídeo - instalação do TK4](https://www.youtube.com/watch?v=QTxe8ASdxE0&t=1510s)
 * [Leia antes de iniciar - Página do Hercules](http://www.hercules-390.org/)
 
 #### b. Instalação passo a passo
@@ -91,7 +91,7 @@ herc =====> exit
 
 #### a. Leitura pre instalação
 * [Leia antes de iniciar - Página do TK4](http://wotho.ethz.ch/tk4-/)
-* [Assista ao vídeo antes de iniciar - Vídeo instalação TK4](http://wotho.ethz.ch/tk4-/)
+* [Assista ao vídeo - instalação do TK4](https://www.youtube.com/watch?v=QTxe8ASdxE0&t=1510s)
 * [Leia antes de iniciar - Página do Hercules](http://www.hercules-390.org/)
 
 #### b. Instalação passo a passo
@@ -185,6 +185,7 @@ cp /opt/tk4-cbt/conf/cbt_dasd.cnf /opt/tk4-_v1.00_current/conf
 #### 3.2.4. Instalacao Emulador Terminal ZOC TN3270
 
 * Faça o download e instale o emulador de terminal https://www.emtec.com/zoc/
+* Execute o assistente de instalação ( next, next, netxt )
 
 
 ---
@@ -196,4 +197,6 @@ cp /opt/tk4-cbt/conf/cbt_dasd.cnf /opt/tk4-_v1.00_current/conf
 ---
 ### 3.4. Guia de Demonstração
 
-* Credenciais do TSO: `herc01/CUL8TR`
+* Credenciais do TSO:
+  * logon: `herc01`
+  * password: `CUL8TR`
