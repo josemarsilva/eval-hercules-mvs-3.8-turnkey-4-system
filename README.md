@@ -200,3 +200,11 @@ cp /opt/tk4-cbt/conf/cbt_dasd.cnf /opt/tk4-_v1.00_current/conf
 * Credenciais do TSO:
   * logon: `herc01`
   * password: `CUL8TR`
+
+
+### I - Referências
+
+* [Turn Key 4 System - TK4](http://wotho.ethz.ch/tk4-/)
+ dowload](http://wotho.ethz.ch/tk4-/tk4-_v1.00_current.zip)
+* [Have your own mainframe](https://activedefense.us/2018/04/14/so-you-want-your-own-mainframe-hercules-z-architecture-emulator-tutorial/)
+* [So you want your own mainframe](https://www.youtube.com/watch?v=-bCpzHTJNqE)
