@@ -69,6 +69,8 @@ unzip tk4-cbt.zip
 * Edite o arquivo de configuração `./tk4-v1.00-current/conf/tk4-.cnf` e faça os seguintes ajustes:
   * Procure a chave **NUMCPU** e troque o valor da chave de "1" para "2" - Resultado final: `NUMCPU ${NUMCPU:=2}`
   * Procure a chave **MAXCPU** e troque o valor da chave de "1" para "2" - Resultado final: `MAXCPU ${MAXCPU:=2}`
+  * Procure a chave **CNSLPORT** e veja a porta TCP/IP da comunicação `CNSLPORT ${CNSLPORT:=3270}`
+  * Procure a chave **HTTPPORT** e veja a porta TCP/IP da comunicação `HTTP PORT ${HTTPPORT:=8038}`
 
 * Para executar o Hercules emulador mainframe do MVS 3.8 faça
 
@@ -110,43 +112,38 @@ wget http://wotho.ethz.ch/tk4-/MVS_TK4-_v1.00_Users_Manual.pdf
 
 ```sh
 cd /opt
-unzip tk4-_v1.00_current.zip
-unzip tk4-cbt.zip
+mkdir hercules-mvs-3.8-turnkey-4-system
+cd hercules-mvs-3.8-turnkey-4-system
+unzip ../tk4-_v1.00_current.zip
+unzip ../tk4-cbt.zip
 echo
-echo No linux e necessario trocar a permissão dos arquivos binarios de execucao
+echo No linux pode ser necessario trocar a permissão dos arquivos binarios de execucao
 echo
-chmod 777 /opt/tk4-v1.00-current/mvs
-chmod 777 /opt/tk4-v1.00-current/start_herc
-chmod 777 /opt/tk4-v1.00-current/hercules/darwin
-chmod 777 /opt/tk4-v1.00-current/hercules/linux/32
-chmod 777 /opt/tk4-v1.00-current/hercules/linux/64
-chmod 777 /opt/tk4-v1.00-current/hercules/linux/arm
-chmod 777 /opt/tk4-v1.00-current/hercules/linux/arm_softfloat
-chmod 777 /opt/tk4-v1.00-current/unattended/set_console_mode
-chmod 777 /opt/tk4-v1.00-current/unattended/set_deamon_mode
 ```
 
 * Configure o modo de execução para Console, para poder interagir com a console. Por default, o modo é deamon (serviço) e você não vai conseguir interagir com a console.
 
 ```sh
-cd /opt/tk4-v1.00-current/unattended/set_console_mode
+cd /opt/hercules-mvs-3.8-turnkey-4-system/unattended
+./set_console_mode
 ```
 
 
-* Edite o arquivo de configuração `./tk4-v1.00-current/conf/tk4-.cnf` e faça os seguintes ajustes:
+* Edite o arquivo de configuração `/opt/hercules-mvs-3.8-turnkey-4-system/conf/tk4-.cnf` e faça os seguintes ajustes:
   * Procure a chave **NUMCPU** e troque o valor da chave de "1" para "2" - Resultado final: `NUMCPU ${NUMCPU:=2}`
   * Procure a chave **MAXCPU** e troque o valor da chave de "1" para "2" - Resultado final: `MAXCPU ${MAXCPU:=2}`
+  * Procure a chave **CNSLPORT** e veja a porta TCP/IP da comunicação `CNSLPORT ${CNSLPORT:=3270}`
+  * Procure a chave **HTTPPORT** e veja a porta TCP/IP da comunicação `HTTP PORT ${HTTPPORT:=8038}`
 
 * Para executar o Hercules emulador mainframe do MVS 3.8 faça
 
 ```sh
-cd /opt/tk4-_v1.00_current
+cd /opt/hercules-mvs-3.8-turnkey-4-system
 echo Executando mvs
 ./mvs
 ```
 
-
-* Para sair do Hercules emulador mainframe do MVS 3.8 faça
+* Para sair do Hercules emulador mainframe do MVS 3.8 faça `exit`
 
 ```hercules
 herc =====> exit
